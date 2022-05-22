@@ -16,7 +16,6 @@ impl Chipp8 {
             window: minifb::Window::new("ripp8", 64, 32, minifb::WindowOptions { scale: s, ..minifb::WindowOptions::default()}).unwrap(),
             cpu: cpu::Cpu::new(6),
         };
-        // chipp8.init(rom);
         chipp8
     }
 
@@ -24,7 +23,6 @@ impl Chipp8 {
         self.window.limit_update_rate(Some(Duration::from_micros(16666)));
         self.render();
         self.cpu.load_sprites();
-        // self.cpu.load_rom("/home/jslin/Projects/ripp8/roms/PONG2");
         self.cpu.load_rom(rom);
     }
 

@@ -63,7 +63,6 @@ impl Cpu {
     pub fn load_rom(&mut self, rom: &str) {
         let bytes: Vec<u8> = fs::read(rom).expect("file not found");
         for i in 0..bytes.len() {
-            if i > 3583 {break;}
             self.mem[0x200 + i] = bytes[i];
         }
     }
