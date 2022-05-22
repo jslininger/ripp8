@@ -3,7 +3,8 @@ CHIP8 interpreter created in Rust to get a grasp on the language, learn extra cr
 
 How to run: clone this directory, run "cargo build --release" if you have Rust installed, and run "./target/release/ripp8"
 Currently is hard coded to run PONG2 and mimics the exact keys the CHIP8 keyboard used.
-You control the left player with 1 and 4, the right player with D and C
+You control the left player with 1 and 4, the right player with D and C. 
+Currently only runs with the hardcoded path on my system. This will be changed soon.
 
 TODOS:
 Add command line arguments for window scale, path to rom, and game speed.
